@@ -8,3 +8,4 @@ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum list docker-ce --showduplicates | sort -r
 sudo yum install docker-ce-18.09.3 docker-ce-cli-18.09.3 containerd.io
+sudo systemctl start docker && sudo systemctl enable docker 
